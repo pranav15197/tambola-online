@@ -19,10 +19,11 @@ class TicketCell extends Component {
     marked: false,
   }
   handleClick = () => {
-    console.log("clicked")
-    this.setState({
-      marked: !this.state.marked
-    })
+    if(this.props.number){
+      this.setState({
+        marked: !this.state.marked
+      })
+    }
   }
   render() {
     return (
