@@ -1,28 +1,40 @@
-.App {
+.App{
+  padding:20px;
+}
+
+.main-number{
+  margin-left: calc(50% - 100px);
+  background-color: #2196f3;
+  font-size: 80px;
+  padding: 50px 10px;
+  width: 180px;
+  height: 100px;
   text-align: center;
+  border-radius: 100px;
+  margin-bottom: 40px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.ticket-container{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  column-gap: 5px;
+  margin: auto auto;
+  max-width: 400px;
+  row-gap: 5px;
+  background-color: #2196f3;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.ticket-cell{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 20px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.marked{
+  background-color: rgb(227, 240, 46);
 }
